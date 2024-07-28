@@ -1,0 +1,2 @@
+Invoking command in '/home/adam/dev_ws/build/basic_mobile_robot': /home/adam/.local/bin/cmake /home/adam/dev_ws/src/basic_mobile_robot -DCMAKE_INSTALL_PREFIX=/home/adam/dev_ws/install/basic_mobile_robot
+Invoked command in '/home/adam/dev_ws/build/basic_mobile_robot' returned '1': /home/adam/.local/bin/cmake /home/adam/dev_ws/src/basic_mobile_robot -DCMAKE_INSTALL_PREFIX=/home/adam/dev_ws/install/basic_mobile_robot

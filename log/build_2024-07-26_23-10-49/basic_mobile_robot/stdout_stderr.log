@@ -1,0 +1,43 @@
+-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/adam/dev_ws/build/basic_mobile_robot
+-- Install configuration: ""
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/config
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v1.launch.py
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/maps
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/wheel.stl
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/robot_base.stl
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/arm_base.stl
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/wrist.stl
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/bicep.stl
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/elbow.stl
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_v1.urdf
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/params
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/rviz
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/rviz/urdf_config.rviz
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/src
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/worlds
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/ament_index/resource_index/package_run_dependencies/basic_mobile_robot
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/ament_index/resource_index/parent_prefix_path/basic_mobile_robot
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/environment/ament_prefix_path.sh
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/environment/path.sh
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/environment/path.dsv
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.bash
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.sh
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.zsh
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.dsv
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/package.dsv
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/ament_index/resource_index/packages/basic_mobile_robot
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/cmake/basic_mobile_robotConfig.cmake
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/cmake/basic_mobile_robotConfig-version.cmake
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/package.xml

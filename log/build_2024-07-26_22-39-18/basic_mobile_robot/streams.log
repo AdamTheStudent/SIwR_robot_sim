@@ -1,0 +1,44 @@
+[0.012s] Invoking command in '/home/adam/dev_ws/build/basic_mobile_robot': /home/adam/.local/bin/cmake /home/adam/dev_ws/src/basic_mobile_robot -DCMAKE_INSTALL_PREFIX=/home/adam/dev_ws/install/basic_mobile_robot
+[0.115s] -- The C compiler identification is GNU 11.4.0
+[0.163s] -- The CXX compiler identification is GNU 11.4.0
+[0.173s] -- Detecting C compiler ABI info
+[0.233s] -- Detecting C compiler ABI info - done
+[0.247s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.247s] -- Detecting C compile features
+[0.247s] -- Detecting C compile features - done
+[0.250s] -- Detecting CXX compiler ABI info
+[0.319s] -- Detecting CXX compiler ABI info - done
+[0.332s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.332s] -- Detecting CXX compile features
+[0.333s] -- Detecting CXX compile features - done
+[0.337s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.458s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.559s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.604s] Error parsing '/home/adam/dev_ws/src/basic_mobile_robot/package.xml':
+[0.641s] Traceback (most recent call last):
+[0.641s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[0.641s]     main()
+[0.641s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[0.641s]     raise e
+[0.641s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[0.641s]     package = parse_package_string(
+[0.641s]   File "/home/adam/.local/lib/python3.10/site-packages/catkin_pkg/package.py", line 788, in parse_package_string
+[0.642s]     pkg.validate(warnings=warnings)
+[0.642s]   File "/home/adam/.local/lib/python3.10/site-packages/catkin_pkg/package.py", line 330, in validate
+[0.642s]     raise InvalidPackage('\n'.join(errors), self.filename)
+[0.642s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/adam/dev_ws/src/basic_mobile_robot/package.xml':
+[0.642s] Invalid email "AdamTheStudent" for person "adam"
+[0.654s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.654s]   execute_process(/usr/bin/python3
+[0.654s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.654s]   /home/adam/dev_ws/src/basic_mobile_robot/package.xml
+[0.654s]   /home/adam/dev_ws/build/basic_mobile_robot/ament_cmake_core/package.cmake)
+[0.654s]   returned error code 1
+[0.654s] Call Stack (most recent call first):
+[0.654s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.654s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[0.654s]   CMakeLists.txt:23 (ament_lint_auto_find_test_dependencies)
+[0.654s] 
+[0.654s] [0m
+[0.654s] -- Configuring incomplete, errors occurred!
+[0.666s] Invoked command in '/home/adam/dev_ws/build/basic_mobile_robot' returned '1': /home/adam/.local/bin/cmake /home/adam/dev_ws/src/basic_mobile_robot -DCMAKE_INSTALL_PREFIX=/home/adam/dev_ws/install/basic_mobile_robot

@@ -1,0 +1,6 @@
+Invoking command in '/home/adam/dev_ws/build/basic_mobile_robot': /home/adam/.local/bin/cmake /home/adam/dev_ws/src/basic_mobile_robot -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/adam/dev_ws/install/basic_mobile_robot
+Invoked command in '/home/adam/dev_ws/build/basic_mobile_robot' returned '0': /home/adam/.local/bin/cmake /home/adam/dev_ws/src/basic_mobile_robot -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/adam/dev_ws/install/basic_mobile_robot
+Invoking command in '/home/adam/dev_ws/build/basic_mobile_robot': /home/adam/.local/bin/cmake --build /home/adam/dev_ws/build/basic_mobile_robot -- -j8 -l8
+Invoked command in '/home/adam/dev_ws/build/basic_mobile_robot' returned '0': /home/adam/.local/bin/cmake --build /home/adam/dev_ws/build/basic_mobile_robot -- -j8 -l8
+Invoking command in '/home/adam/dev_ws/build/basic_mobile_robot': /home/adam/.local/bin/cmake --install /home/adam/dev_ws/build/basic_mobile_robot
+Invoked command in '/home/adam/dev_ws/build/basic_mobile_robot' returned '0': /home/adam/.local/bin/cmake --install /home/adam/dev_ws/build/basic_mobile_robot
