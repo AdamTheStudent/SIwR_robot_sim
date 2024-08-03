@@ -10,5 +10,5 @@ https://automaticaddison.com/sensor-fusion-using-the-robot-localization-package-
 Potrzebne do uruchomienia: \
 sudo apt-get install ros-humble-rqt-robot-steering \
 sudo apt install ros-humble-robot-localization < nie jestem pewien > \
-jezeli cos jeszcze jest potrzebne do uruchomienia sprawdzic na stronie na ktorej sie wzorowalem. \
+jezeli cos jeszcze jest potrzebne do uruchomienia sprawdzic na stronie na ktorej sie wzorowalem. 
 
