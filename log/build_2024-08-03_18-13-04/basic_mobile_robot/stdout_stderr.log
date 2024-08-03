@@ -1,0 +1,65 @@
+-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/adam/dev_ws/build/basic_mobile_robot
+-- Install configuration: ""
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/lib/basic_mobile_robot/pos_estimation.py
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/config
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/config/ekf.yaml
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/pos_estimation.launch.py
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/second_launch.py
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/plot.py
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v1.launch.py
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v3.launch.py
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v2.launch.py
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/maps
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/wheel.stl
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/robot_base.stl
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/arm_base.stl
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/wrist.stl
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/bicep.stl
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/elbow.stl
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/wheel.stl
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/robot_base.stl
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/arm_base.stl
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/wrist.stl
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/bicep.stl
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/elbow.stl
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/model.config
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/model.sdf
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_v1.urdf
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/params
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/rviz
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/rviz/urdf_config.rviz
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/src
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/src/my_plotter_node.py
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/src/pos_estimation.py
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/worlds
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/worlds/basic_mobile_bot_world
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/worlds/basic_mobile_bot_world/smalltown.world
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/ament_index/resource_index/package_run_dependencies/basic_mobile_robot
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/ament_index/resource_index/parent_prefix_path/basic_mobile_robot
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/environment/ament_prefix_path.sh
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/environment/path.sh
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/environment/path.dsv
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.bash
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.sh
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.zsh
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.dsv
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/package.dsv
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/ament_index/resource_index/packages/basic_mobile_robot
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/cmake/basic_mobile_robotConfig.cmake
+-- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/cmake/basic_mobile_robotConfig-version.cmake
+-- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/package.xml

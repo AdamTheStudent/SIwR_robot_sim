@@ -1,0 +1,70 @@
+[0.013s] Invoking command in '/home/adam/dev_ws/build/basic_mobile_robot': CMAKE_PREFIX_PATH=/home/adam/nav2_ws/install/nav2_simple_commander:/opt/ros/humble:${CMAKE_PREFIX_PATH} /home/adam/.local/bin/cmake --build /home/adam/dev_ws/build/basic_mobile_robot -- -j8 -l8
+[0.084s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.268s] -- Found rclpy: 3.3.13 (/opt/ros/humble/share/rclpy/cmake)
+[0.268s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.321s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.323s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.324s] -- Added test 'lint_cmake' to check CMake code style
+[0.324s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.326s] -- Added test 'xmllint' to check XML markup files
+[0.327s] -- Configuring done (0.2s)
+[0.329s] -- Generating done (0.0s)
+[0.330s] -- Build files have been written to: /home/adam/dev_ws/build/basic_mobile_robot
+[0.351s] Invoked command in '/home/adam/dev_ws/build/basic_mobile_robot' returned '0': CMAKE_PREFIX_PATH=/home/adam/nav2_ws/install/nav2_simple_commander:/opt/ros/humble:${CMAKE_PREFIX_PATH} /home/adam/.local/bin/cmake --build /home/adam/dev_ws/build/basic_mobile_robot -- -j8 -l8
+[0.511s] Invoking command in '/home/adam/dev_ws/build/basic_mobile_robot': CMAKE_PREFIX_PATH=/home/adam/nav2_ws/install/nav2_simple_commander:/opt/ros/humble:${CMAKE_PREFIX_PATH} /home/adam/.local/bin/cmake --install /home/adam/dev_ws/build/basic_mobile_robot
+[0.568s] -- Install configuration: ""
+[0.569s] -- Installing: /home/adam/dev_ws/install/basic_mobile_robot/lib/basic_mobile_robot/pos_estimation.py
+[0.569s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/config
+[0.569s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/config/ekf.yaml
+[0.569s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch
+[0.569s] -- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/pos_estimation.launch.py
+[0.569s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/second_launch.py
+[0.569s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/plot.py
+[0.569s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v1.launch.py
+[0.569s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v3.launch.py
+[0.569s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v2.launch.py
+[0.570s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/maps
+[0.570s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes
+[0.570s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/wheel.stl
+[0.570s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/robot_base.stl
+[0.570s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/arm_base.stl
+[0.570s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/wrist.stl
+[0.570s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/bicep.stl
+[0.570s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/elbow.stl
+[0.570s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models
+[0.570s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description
+[0.570s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes
+[0.570s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/wheel.stl
+[0.570s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/robot_base.stl
+[0.571s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/arm_base.stl
+[0.571s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/wrist.stl
+[0.571s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/bicep.stl
+[0.571s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/meshes/elbow.stl
+[0.571s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/model.config
+[0.571s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_description/model.sdf
+[0.571s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_v1.urdf
+[0.571s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/params
+[0.571s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/rviz
+[0.571s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/rviz/urdf_config.rviz
+[0.571s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/src
+[0.571s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/src/my_plotter_node.py
+[0.571s] -- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/src/pos_estimation.py
+[0.571s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/worlds
+[0.571s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/worlds/basic_mobile_bot_world
+[0.571s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/worlds/basic_mobile_bot_world/smalltown.world
+[0.571s] -- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/ament_index/resource_index/package_run_dependencies/basic_mobile_robot
+[0.571s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/ament_index/resource_index/parent_prefix_path/basic_mobile_robot
+[0.571s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/environment/ament_prefix_path.sh
+[0.572s] -- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/environment/ament_prefix_path.dsv
+[0.572s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/environment/path.sh
+[0.572s] -- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/environment/path.dsv
+[0.572s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.bash
+[0.572s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.sh
+[0.572s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.zsh
+[0.572s] -- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/local_setup.dsv
+[0.572s] -- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/package.dsv
+[0.572s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/ament_index/resource_index/packages/basic_mobile_robot
+[0.572s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/cmake/basic_mobile_robotConfig.cmake
+[0.572s] -- Up-to-date: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/cmake/basic_mobile_robotConfig-version.cmake
+[0.572s] -- Installing: /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/package.xml
+[0.581s] Invoked command in '/home/adam/dev_ws/build/basic_mobile_robot' returned '0': CMAKE_PREFIX_PATH=/home/adam/nav2_ws/install/nav2_simple_commander:/opt/ros/humble:${CMAKE_PREFIX_PATH} /home/adam/.local/bin/cmake --install /home/adam/dev_ws/build/basic_mobile_robot

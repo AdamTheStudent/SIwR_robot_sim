@@ -349,6 +349,9 @@ basic_mobile_robot_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 basic_mobile_robot_SOURCE_DIR:STATIC=/home/adam/dev_ws/src/basic_mobile_robot
 
+//The directory containing a CMake configuration file for rclpy.
+rclpy_DIR:PATH=/opt/ros/humble/share/rclpy/cmake
+
 //Path to a program.
 xmllint_BIN:FILEPATH=/usr/bin/xmllint
 

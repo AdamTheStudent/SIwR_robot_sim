@@ -196,6 +196,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/humble/share/ament_lint_common/cmake/ament_cmake_export_dependencies-extras.cmake"
   "/opt/ros/humble/share/ament_lint_common/cmake/ament_lint_commonConfig-version.cmake"
   "/opt/ros/humble/share/ament_lint_common/cmake/ament_lint_commonConfig.cmake"
+  "/opt/ros/humble/share/rclpy/cmake/rclpyConfig-version.cmake"
+  "/opt/ros/humble/share/rclpy/cmake/rclpyConfig.cmake"
   )
 
 # The corresponding makefile is:
