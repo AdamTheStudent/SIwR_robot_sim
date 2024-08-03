@@ -6,6 +6,13 @@ lib/
 msg_gen/
 srv_gen/
 /log
+/build
+/install
+*.pyc
+*.pyo
+*.swp
+.DS_Store
+*.log
 msg/*Action.msg
 msg/*ActionFeedback.msg
 msg/*ActionGoal.msg
