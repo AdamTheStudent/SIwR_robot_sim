@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from threading import Thread
 import time
+import utm
 
 # Global variables to store sensor data
 gps_data = None
@@ -20,6 +21,10 @@ imu_x = []
 imu_y = []
 odom_x = []
 odom_y = []
+
+# Global variables to store the initial GPS coordinates
+initial_utm_x = None
+initial_utm_y = None
 
 class SensorListener(Node):
 
@@ -54,26 +59,41 @@ class SensorListener(Node):
         odom_data = msg
 
 def update_data():
-    global gps_data, imu_data, odom_data
+    global gps_data, imu_data, odom_data, initial_utm_x, initial_utm_y
     while rclpy.ok():
         if gps_data:
-            gps_x.append(gps_data.longitude)
-            gps_y.append(gps_data.latitude)
+            # Convert latitude and longitude to UTM
+            utm_coords = utm.from_latlon(gps_data.latitude, gps_data.longitude)
+            
+            # Set initial UTM coordinates if not already set
+            if initial_utm_x is None and initial_utm_y is None:
+                initial_utm_x = utm_coords[0]
+                initial_utm_y = utm_coords[1]
+
+            # Calculate the local UTM coordinates relative to the initial position
+            local_utm_x = utm_coords[0] - initial_utm_x
+            local_utm_y = utm_coords[1] - initial_utm_y
+
+            gps_x.append(local_utm_x)
+            gps_y.append(local_utm_y)
+
         if imu_data:
             imu_x.append(imu_data.linear_acceleration.x)
             imu_y.append(imu_data.linear_acceleration.y)
+
         if odom_data:
             odom_x.append(odom_data.pose.pose.position.x)
             odom_y.append(odom_data.pose.pose.position.y)
+
         time.sleep(0.1)  # Update rate
 
 def animate(i):
     plt.clf()
     plt.subplot(3, 1, 1)
     plt.plot(gps_x, gps_y, 'r-')
-    plt.title('GPS Data')
-    plt.xlabel('Longitude')
-    plt.ylabel('Latitude')
+    plt.title('GPS Data (UTM)')
+    plt.xlabel('Easting (m)')
+    plt.ylabel('Northing (m)')
     plt.subplot(3, 1, 2)
     plt.plot(imu_x, imu_y, 'g-')
     plt.title('IMU Data')
@@ -110,4 +130,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
