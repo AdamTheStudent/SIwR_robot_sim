@@ -35,14 +35,15 @@ class SensorListener(Node):
             '/gps/fix',
             self.gps_callback,
             10)
-        self.imu_subscription = self.create_subscription(
-            Imu,
-            '/imu/data',
-            self.imu_callback,
-            10)
+        # self.imu_subscription = self.create_subscription(
+        #     Imu,
+        #     '/imu/data',
+        #     self.imu_callback,
+        #     10)
+        # Filtr kalmana IMU + Odometria
         self.odom_subscription = self.create_subscription(
             Odometry,
-            '/wheel/odometry',
+            '/odometry/filtered',
             self.odom_callback,
             10)
 
@@ -50,9 +51,9 @@ class SensorListener(Node):
         global gps_data
         gps_data = msg
 
-    def imu_callback(self, msg):
-        global imu_data
-        imu_data = msg
+    # def imu_callback(self, msg):
+    #     global imu_data
+    #     imu_data = msg
 
     def odom_callback(self, msg):
         global odom_data
@@ -77,9 +78,9 @@ def update_data():
             gps_x.append(local_utm_x)
             gps_y.append(local_utm_y)
 
-        if imu_data:
-            imu_x.append(imu_data.linear_acceleration.x)
-            imu_y.append(imu_data.linear_acceleration.y)
+        # if imu_data:
+        #     imu_x.append(imu_data.linear_acceleration.x)
+        #     imu_y.append(imu_data.linear_acceleration.y)
 
         if odom_data:
             odom_x.append(odom_data.pose.pose.position.x)
@@ -89,17 +90,17 @@ def update_data():
 
 def animate(i):
     plt.clf()
-    plt.subplot(3, 1, 1)
+    plt.subplot(2, 1, 1)
     plt.plot(gps_x, gps_y, 'r-')
     plt.title('GPS Data (UTM)')
     plt.xlabel('Easting (m)')
     plt.ylabel('Northing (m)')
-    plt.subplot(3, 1, 2)
-    plt.plot(imu_x, imu_y, 'g-')
-    plt.title('IMU Data')
-    plt.xlabel('Linear Acceleration X')
-    plt.ylabel('Linear Acceleration Y')
-    plt.subplot(3, 1, 3)
+    # plt.subplot(3, 1, 2)
+    # plt.plot(imu_x, imu_y, 'g-')
+    # plt.title('IMU Data')
+    # plt.xlabel('Linear Acceleration X')
+    # plt.ylabel('Linear Acceleration Y')
+    plt.subplot(2, 1, 2)
     plt.plot(odom_x, odom_y, 'b-')
     plt.title('Odometry Data')
     plt.xlabel('Position X')
