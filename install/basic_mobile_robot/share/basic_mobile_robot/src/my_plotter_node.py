@@ -50,7 +50,6 @@ def main(args=None):
     rclpy.init(args=args)
     plotter_node = PlotterNode()
 
-    # Run the plotting in a separate thread
     import threading
     plot_thread = threading.Thread(target=plotter_node.start_plotting)
     plot_thread.start()

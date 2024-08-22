@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "basic_mobile_robot")
 set(basic_mobile_robot_VERSION "3.0.0")
-set(basic_mobile_robot_MAINTAINER "automaticaddison <automaticaddison@automaticaddison.todo>")
+set(basic_mobile_robot_MAINTAINER "adam <adam.nawrocki@student.put.poznan.pl>")
 set(basic_mobile_robot_BUILD_DEPENDS )
 set(basic_mobile_robot_BUILDTOOL_DEPENDS "ament_cmake")
 set(basic_mobile_robot_BUILD_EXPORT_DEPENDS )
