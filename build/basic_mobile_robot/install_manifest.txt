@@ -2,7 +2,6 @@
 /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/config/ekf.yaml
 /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/pos_estimation.launch.py
 /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/second_launch.py
-/home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/plot.py
 /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v1.launch.py
 /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v3.launch.py
 /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v2.launch.py
