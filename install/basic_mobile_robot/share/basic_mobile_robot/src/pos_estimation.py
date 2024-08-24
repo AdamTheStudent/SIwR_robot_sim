@@ -120,27 +120,15 @@ def optimize_and_plot_result():
 
 def animate(i):
     plt.clf()
-    plt.subplot(3, 1, 1)
-    plt.plot(gps_x, gps_y, 'r-', label="GPS")
-    plt.title('GPS Data (UTM)')
-    plt.xlabel('Easting (m)')
-    plt.ylabel('Northing (m)')
-    plt.legend()
-
-    plt.subplot(3, 1, 2)
     plt.plot(odom_x, odom_y, 'b-', label="Odometry")
-    plt.title('Odometry Data')
-    plt.xlabel('Position X')
-    plt.ylabel('Position Y')
-    plt.legend()
-
-    plt.subplot(3, 1, 3)
     plt.plot(estimate_x, estimate_y, 'k-', label="Estimated Position")
-    plt.title('Estimated Position using Factor Graph')
+    plt.scatter(gps_x, gps_y, color='r', label="GPS", marker='o')  # Plot GPS data as points
+    
+    plt.title('Sensor Data and Estimated Position')
     plt.xlabel('Position X')
     plt.ylabel('Position Y')
     plt.legend()
-
+    plt.grid(True)
     plt.tight_layout()
 
 def start_plot():
