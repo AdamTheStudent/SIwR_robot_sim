@@ -75,7 +75,7 @@ def update_data():
             gps_y.append(local_utm_y)
 
             # Add GPS factor to the graph
-            gps_noise = gtsam.noiseModel.Diagonal.Sigmas(np.array([0.5, 0.5, 0.1]))  # noise model
+            gps_noise = gtsam.noiseModel.Diagonal.Sigmas(np.array([0.9, 0.9, 0.1]))  # noise model
             graph.add(gtsam.PriorFactorPose2(sym.X(pose_index), gtsam.Pose2(local_utm_x, local_utm_y, 0), gps_noise))
 
         if odom_data:
@@ -88,7 +88,7 @@ def update_data():
 
             # Add odometry factor between consecutive poses
             if pose_index > 0:
-                odom_noise = gtsam.noiseModel.Diagonal.Sigmas(np.array([0.1, 0.1, 0.1]))  # noise model
+                odom_noise = gtsam.noiseModel.Diagonal.Sigmas(np.array([0.75, 0.75, 0.1]))  # noise model
                 odometry = gtsam.Pose2(local_odom_x - odom_x[-2], local_odom_y - odom_y[-2], 0)
                 graph.add(gtsam.BetweenFactorPose2(sym.X(pose_index - 1), sym.X(pose_index), odometry, odom_noise))
 
@@ -101,20 +101,23 @@ def update_data():
 def optimize_and_plot_result():
     global pose_index
 
-    while rclpy.ok():  # Continuously optimize and update the plot
+    while rclpy.ok():  
         if pose_index > 0:
             optimizer = gtsam.GaussNewtonOptimizer(graph, initial_estimate)
             result = optimizer.optimize()
 
-            # Clear previous estimates
             estimate_x.clear()
             estimate_y.clear()
 
-            # Extract and plot the estimated positions
             for i in range(pose_index):
-                pose = result.atPose2(sym.X(i))
-                estimate_x.append(pose.x())
-                estimate_y.append(pose.y())
+                key = sym.X(i)
+                if result.exists(key): 
+                    pose = result.atPose2(key)
+                    estimate_x.append(pose.x())
+                    estimate_y.append(pose.y())
+                else:
+                    print(f"Miejmy nadzieje ze tego nie widzisz")
+
 
         time.sleep(1)  # Optimize and update every second
 
