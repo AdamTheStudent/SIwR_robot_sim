@@ -6,12 +6,13 @@ Projekt estymujacy pozycje robota dwukolowego za pomoca Factor Graphs  z wykorzy
 
 ## Usage
 
-Install dependencies
+Zaleznosci:
 
 ```
 sudo apt-get install ros-humble-rqt-robot-steering
 sudo apt install ros-humble-robot-localization
 ```
+Uruchomienie:
 ```
 git clone https://github.com/AdamTheStudent/SIwR_robot_sim.git
 
@@ -23,19 +24,11 @@ ros2 run rqt_robot_steering rqt_robot_steering --force-discover
 # Sterowanie robotem
 ```
 
-
-## Tech Stack
-
-**Client:** React, Redux, TailwindCSS
-
-**Server:** Node, Express
-
-
 ## Screenshots
 
-![Przyklad 1](https://github.com/AdamTheStudent/SIwR_robot_sim/img/main/Plot1.png)
-![Przyklad 2](https://github.com/AdamTheStudent/SIwR_robot_sim/img/main/Plot2.png)
-![Przyklad 3](https://github.com/AdamTheStudent/SIwR_robot_sim/img/main/Plot3.png)
+![Przyklad 1](https://github.com/AdamTheStudent/SIwR_robot_sim/blob/main/img/Plot.png)
+![Przyklad 2](https://github.com/AdamTheStudent/SIwR_robot_sim/blob/main/img/Plot2.png)
+![Przyklad 3](https://github.com/AdamTheStudent/SIwR_robot_sim/blob/main/img/Plot3.png)
 
 ## Related
 
