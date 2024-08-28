@@ -49,11 +49,11 @@ Nastepnie przygotowalismy projekt estymujacy pozycje robota w swiecie przy uzyci
 Do estymacji pozycji wykorzystano sensory GPS oraz Odometrie zwrocona z EKF (extended kalman filter), ktory wykorzystuje senory IMU oraz Odometrie z enkoderow.
 
 Przyjeta struktura Factor Graphow do estymowania kolejnych pozycji ma strukture:
-
+```
 (X0) -- [EKF] -- (X1) -- [EKF] -- (X2) -- [EKF] -- (X3)
  |                |                |
 [GPS]           [GPS]            [GPS]
-
+```
 Sygnaly z sensorow i estymowana pozycja jest plotowana w czasie rzeczywistym na wspolnym wykresie.
 
 ## Authors
