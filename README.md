@@ -1,14 +1,62 @@
-Uruchomienie: \
-git clone https://github.com/AdamTheStudent/SIwR_robot_sim.git \
-ros2 launch basic_mobile_robot basic_mobile_bot_v3.launch.py <- uruchomienie symulacji robota \
-ros2 run rqt_robot_steering rqt_robot_steering --force-discover <- panel sterowania robotem \
-ros2 launch basic_mobile_robot pos_estimation.launch.py <- plotowanie surwoych danych z sensorow #TODO estymowanie za pomoca factor graphs \
 
-Source: \
-https://automaticaddison.com/sensor-fusion-using-the-robot-localization-package-ros-2/ \
+# Projekt Sztuczna Inteligencja w Robotyce
 
-Potrzebne do uruchomienia: \
-sudo apt-get install ros-humble-rqt-robot-steering \
-sudo apt install ros-humble-robot-localization < nie jestem pewien > \
-jezeli cos jeszcze jest potrzebne do uruchomienia sprawdzic na stronie na ktorej sie wzorowalem. 
+Projekt estymujacy pozycje robota dwukolowego za pomoca Factor Graphs  z wykorzystaniem Nav2 i GTSAM. Zasymulowane i wykorzystane do estymacji zostaly sensory GPS, IMU i Odometria z enkoderow. 
+
+
+## Usage
+
+Install dependencies
+
+```
+sudo apt-get install ros-humble-rqt-robot-steering
+sudo apt install ros-humble-robot-localization
+```
+```
+git clone https://github.com/AdamTheStudent/SIwR_robot_sim.git
+
+ros2 launch basic_mobile_robot basic_mobile_bot_v3.launch.py 
+# Symulacja robota i sensotow
+ros2 launch basic_mobile_robot pos_estimation.launch.py 
+# Plot z estymowanym polozeniem
+ros2 run rqt_robot_steering rqt_robot_steering --force-discover
+# Sterowanie robotem
+```
+
+
+## Tech Stack
+
+**Client:** React, Redux, TailwindCSS
+
+**Server:** Node, Express
+
+
+## Screenshots
+
+![Przyklad 1](https://github.com/AdamTheStudent/SIwR_robot_sim/img/main/Plot1.png)
+![Przyklad 2](https://github.com/AdamTheStudent/SIwR_robot_sim/img/main/Plot2.png)
+![Przyklad 3](https://github.com/AdamTheStudent/SIwR_robot_sim/img/main/Plot3.png)
+
+## Related
+
+Przydatne strony:
+
+[GTSAM](https://gtsam.org/) 
+
+[Nav2](https://docs.nav2.org/setup_guides/odom/setup_odom.html)
+
+[Symulacja](https://automaticaddison.com/)
+## Podsumowanie
+
+What did you learn while building this project? What challenges did you face and how did you overcome them?
+
+
+## Authors
+
+- [@AdamTheStudent](https://www.github.com/AdamTheStudent)
+- [@danak212](https://github.com/danak212)
+
+## Demo
+
+Linki do YouTube
 
