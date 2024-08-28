@@ -1,10 +1,7 @@
 /home/adam/dev_ws/install/basic_mobile_robot/lib/basic_mobile_robot/pos_estimation.py
 /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/config/ekf.yaml
 /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/pos_estimation.launch.py
-/home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/second_launch.py
-/home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v1.launch.py
 /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v3.launch.py
-/home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/launch/basic_mobile_bot_v2.launch.py
 /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/maps/.gitkeep
 /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/wheel.stl
 /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/meshes/robot_base.stl
@@ -23,7 +20,6 @@
 /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/models/basic_mobile_bot_v1.urdf
 /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/params/.gitkeep
 /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/rviz/urdf_config.rviz
-/home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/src/my_plotter_node.py
 /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/src/pos_estimation.py
 /home/adam/dev_ws/install/basic_mobile_robot/share/basic_mobile_robot/worlds/basic_mobile_bot_world/smalltown.world
 /home/adam/dev_ws/install/basic_mobile_robot/share/ament_index/resource_index/package_run_dependencies/basic_mobile_robot
