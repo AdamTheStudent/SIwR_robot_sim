@@ -38,11 +38,23 @@ Przydatne strony:
 
 [Nav2](https://docs.nav2.org/setup_guides/odom/setup_odom.html)
 
-[Symulacja](https://automaticaddison.com/)
-## Podsumowanie
+[Symulacja robota](https://automaticaddison.com/)
 
-What did you learn while building this project? What challenges did you face and how did you overcome them?
+## Opis projektu i podsumowanie
 
+Pierwsza czescia projektu bylo przygotowanie symulacji robota dwukolowego sensorow oraz swiata w symulatorze Gazebo.
+Do przygotowania symulacji zachowania sensorow i rozszerzonego filtu Kalmana (EKF) wykorzystano framework NAV2.
+
+Nastepnie przygotowalismy projekt estymujacy pozycje robota w swiecie przy uzyciu GTSAM.
+Do estymacji pozycji wykorzystano sensory GPS oraz Odometrie zwrocona z EKF (extended kalman filter), ktory wykorzystuje senory IMU oraz Odometrie z enkoderow.
+
+Przyjeta struktura Factor Graphow do estymowania kolejnych pozycji ma strukture:
+
+(X0) -- [EKF] -- (X1) -- [EKF] -- (X2) -- [EKF] -- (X3)
+ |                |                |
+[GPS]           [GPS]            [GPS]
+
+Sygnaly z sensorow i estymowana pozycja jest plotowana w czasie rzeczywistym na wspolnym wykresie.
 
 ## Authors
 
@@ -51,5 +63,5 @@ What did you learn while building this project? What challenges did you face and
 
 ## Demo
 
-Linki do YouTube
+Linki do YouTube / .gif #TODO
 

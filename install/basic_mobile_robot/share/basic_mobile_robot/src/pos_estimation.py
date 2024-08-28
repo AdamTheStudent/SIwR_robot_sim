@@ -13,7 +13,6 @@ import gtsam
 from gtsam import symbol_shorthand as sym
 import numpy as np
 
-# Global variables to store sensor data
 gps_data = None
 odom_data = None
 
@@ -22,7 +21,6 @@ gps_y = []
 odom_x = []
 odom_y = []
 
-# Global variables for the factor graph
 initial_utm_x = None
 initial_utm_y = None
 pose_index = 0
@@ -59,44 +57,33 @@ def update_data():
 
     while rclpy.ok():
         if gps_data:
-            # Convert latitude and longitude to UTM
             utm_coords = utm.from_latlon(gps_data.latitude, gps_data.longitude)
             
-            # Set initial UTM coordinates if not already set
             if initial_utm_x is None and initial_utm_y is None:
                 initial_utm_x = utm_coords[0]
                 initial_utm_y = utm_coords[1]
-
-            # Calculate the local UTM coordinates relative to the initial position
             local_utm_x = utm_coords[0] - initial_utm_x
             local_utm_y = utm_coords[1] - initial_utm_y
 
             gps_x.append(local_utm_x)
             gps_y.append(local_utm_y)
-
-            # Add GPS factor to the graph
-            gps_noise = gtsam.noiseModel.Diagonal.Sigmas(np.array([0.9, 0.9, 0.1]))  # noise model
+            gps_noise = gtsam.noiseModel.Diagonal.Sigmas(np.array([0.9, 0.9, 0.1]))
             graph.add(gtsam.PriorFactorPose2(sym.X(pose_index), gtsam.Pose2(local_utm_x, local_utm_y, 0), gps_noise))
 
         if odom_data:
-            # Get odometry data
             local_odom_x = odom_data.pose.pose.position.x
             local_odom_y = odom_data.pose.pose.position.y
-
             odom_x.append(local_odom_x)
             odom_y.append(local_odom_y)
 
-            # Add odometry factor between consecutive poses
             if pose_index > 0:
-                odom_noise = gtsam.noiseModel.Diagonal.Sigmas(np.array([0.75, 0.75, 0.1]))  # noise model
+                odom_noise = gtsam.noiseModel.Diagonal.Sigmas(np.array([0.75, 0.75, 0.1]))
                 odometry = gtsam.Pose2(local_odom_x - odom_x[-2], local_odom_y - odom_y[-2], 0)
                 graph.add(gtsam.BetweenFactorPose2(sym.X(pose_index - 1), sym.X(pose_index), odometry, odom_noise))
-
-            # Initialize the estimate for this pose
             initial_estimate.insert(sym.X(pose_index), gtsam.Pose2(local_odom_x, local_odom_y, 0))
             pose_index += 1
 
-        time.sleep(0.1)  # Update rate
+        time.sleep(0.1)
 
 def optimize_and_plot_result():
     global pose_index
@@ -119,13 +106,13 @@ def optimize_and_plot_result():
                     print(f"Miejmy nadzieje ze tego nie widzisz")
 
 
-        time.sleep(1)  # Optimize and update every second
+        time.sleep(1)
 
 def animate(i):
     plt.clf()
     plt.plot(odom_x, odom_y, 'b-', label="Odometry")
     plt.plot(estimate_x, estimate_y, 'k-', label="Estimated Position")
-    plt.scatter(gps_x, gps_y, color='r', label="GPS", marker='o')  # Plot GPS data as points
+    plt.scatter(gps_x, gps_y, color='r', label="GPS", marker='o')
     
     plt.title('Sensor Data and Estimated Position')
     plt.xlabel('Position X')
@@ -141,20 +128,13 @@ def start_plot():
 def main(args=None):
     rclpy.init(args=args)
     sensor_listener = SensorListener()
-
-    # Start ROS listener thread
     ros_thread = Thread(target=rclpy.spin, args=(sensor_listener,))
     ros_thread.start()
-    
-    # Start data update thread
     data_thread = Thread(target=update_data)
     data_thread.start()
-
-    # Start optimization and plotting in a separate thread
     opt_thread = Thread(target=optimize_and_plot_result)
     opt_thread.start()
     
-    # Start plotting
     start_plot()
 
     sensor_listener.destroy_node()
