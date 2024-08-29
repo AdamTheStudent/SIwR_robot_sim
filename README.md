@@ -63,5 +63,6 @@ Sygnaly z sensorow i estymowana pozycja jest plotowana w czasie rzeczywistym na 
 
 ## Demo
 
-Linki do YouTube / .gif #TODO
+![Demo symulacji](https://github.com/AdamTheStudent/SIwR_robot_sim/blob/main/img/gif.gif)
+
 

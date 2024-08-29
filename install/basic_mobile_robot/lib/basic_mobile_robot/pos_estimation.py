@@ -67,7 +67,7 @@ def update_data():
 
             gps_x.append(local_utm_x)
             gps_y.append(local_utm_y)
-            gps_noise = gtsam.noiseModel.Diagonal.Sigmas(np.array([0.9, 0.9, 0.1]))
+            gps_noise = gtsam.noiseModel.Diagonal.Sigmas(np.array([.8, .8, 0.1]))
             graph.add(gtsam.PriorFactorPose2(sym.X(pose_index), gtsam.Pose2(local_utm_x, local_utm_y, 0), gps_noise))
 
         if odom_data:
@@ -77,7 +77,7 @@ def update_data():
             odom_y.append(local_odom_y)
 
             if pose_index > 0:
-                odom_noise = gtsam.noiseModel.Diagonal.Sigmas(np.array([0.75, 0.75, 0.1]))
+                odom_noise = gtsam.noiseModel.Diagonal.Sigmas(np.array([.2, .2, 0.1]))
                 odometry = gtsam.Pose2(local_odom_x - odom_x[-2], local_odom_y - odom_y[-2], 0)
                 graph.add(gtsam.BetweenFactorPose2(sym.X(pose_index - 1), sym.X(pose_index), odometry, odom_noise))
             initial_estimate.insert(sym.X(pose_index), gtsam.Pose2(local_odom_x, local_odom_y, 0))
