@@ -67,9 +67,7 @@ Następnie przygotowana została estymacja pozycji robota w otaczającym go śro
 Do estymacji pozycji wykorzystano dodatkowo sensory GPS oraz Odometrię zwróconą z EKF, który wykorzystuje połączenie
 sensorów IMU i Odometrii z enkoderów.
 
-## Wyjaśnienie wybranych fragmentów projektu
-
-### `pos_estimation.py`
+### Wyjaśnienie wybranych fragmentów projektu
 
 #### Odpowiedzialne za estymację pozycji robota są funkcje zaimplementowane w `pos_estimation.py`:
 
